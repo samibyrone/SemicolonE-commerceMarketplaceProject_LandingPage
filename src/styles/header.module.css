@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+}
+
+.header{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gray;
+}
+
+.isHomepage{
+    background-color: black;
+}
+
+.navbarList{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.image{
+    width: 250px;
+    height: 70px;
+    margin: 0% 1% 1% 25%;
+    justify-content: center;
+}
+
+.menuList{
+    width: 700px;
+    height: 70px;
+    display: flex;
+    margin: 4% 1% 1% 10%; 
+    justify-items: center;
+    gap: 30px;
+    list-style: none;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blcak;
+    margin: 1% 1% 1% 30%;
+    gap: 10px;
+    background-color: brown;
+}
+
+.relative{
+    width: 150px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarMenu{
+    width: 900px;
+    height: 120px;
+    display: flex;
+    margin: 2%;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    /* background-color: black; */
+}
+
+.text-white{
+    display: flex;
+    position: relative;
+}
+
+.icon{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    background-color: blue;
+    flex-direction: row;
+    color: white;
+    gap: 10px;
+}
+
+.badges{
+    background-color: green;
+}
+
+.button{
+    display: flex;
+    justify-items: center;
+    background-color: black;
+    color: white;
+    outline: none;
+    /* "lg:hidden w-10 h-10 flex justify-center items-center bg-black text-white focus:outline-none" */
+}
