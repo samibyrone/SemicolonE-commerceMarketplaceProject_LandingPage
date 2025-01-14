@@ -34,13 +34,13 @@ export const menuLists = [
 export const herolist = [
   {
     id: 1,
-    title: "Natural Wooden Products",
-    description: "Sell globally in minutes with localized currencies, languages, and experiences in every market.",
-    image: "../images/hero/h1.png",
+    title: "GALUIN Men's Sneakers Products",
+    description: "GALUIN 2024 Men's Casual Shoes Sneakers Big Size 39-47.",
+    image: "../images/shoe.png",   
     price: [
-      { color: "red", value: 135.78 },
-      { color: "yellow", value: 185.27 },
-      { color: "green", value: 125.62 },
+      { color: "red", value: 12.800 },
+      { color: "yellow", value: 10.400 },
+      { color: "green", value: 9.500 },
     ],
     color: [
       { value: "red" },
@@ -51,13 +51,30 @@ export const herolist = [
 
   {
     id: 2,
-    title: "Explore Wooden Products",
-    description: "Sell globally in minutes with localized currencies, languages, and experiences in every market.",
-    image: "../images/heroh2.png",
+    title: "KANGERDUN Men's Leather Shoe Products",
+    description: "KANGERDUN Men Leather Shoes Oxford Wedding Corporate Formal Loafers Slip - Black.",
+    image: "../images/shoe2.png",
     price: [
-      { color: "red", value: 154.23 },
-      { color: "yellow", value: 123.43 },
-      { color: "green", value: 43.34 },
+      { color: "red", value: 13.900 },
+      { color: "yellow", value: 12.400 },
+      { color: "green", value: 11.500 },
+    ],
+    color: [
+      { value: "red" },
+      { value: "yellow" },
+      { value: "green" }
+    ]
+  },
+
+  {
+    id: 3,
+    title: "ALAGZI Men's Casual Shoe Products",
+    description: "ALagzi Mens Casual High-Top Shoes Running Sneakers - Beige.",
+    image: "../images/shoe3.png",
+    price: [
+      { color: "red", value: 20.900 },
+      { color: "yellow", value: 18.400 },
+      { color: "green", value: 17.500 },
     ],
     color: [
       { value: "red" },

@@ -37,10 +37,10 @@ const Badges = ({color, children}) => {
     );
 };
 
-const Title = ({ level, children, className }) => {
-  const Tag = `h${level}`;
-  return <Tag className={className}> {children} </Tag>;
-};
+// const Title = ({ level, children, className }) => {
+//   const Tag = `h${level}`;
+//   return <Tag className={className}> {children} </Tag>;
+// };
      
 
 const BodyOne = ({ children, className }) =>  <p className={className}> {children}  </p>;
@@ -52,17 +52,21 @@ const Caption = ({ children, className }) =>  <span className={className}>  {chi
 const Span = ({ children, className }) => <span className={className}>  {children}  </span>;
 
 
-Title.propTypes = {
-  level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string.isRequired,
-};
+// Title.propTypes = {
+//   level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
+//   children: PropTypes.node.isRequired,
+//   className: PropTypes.string.isRequired,
+// };
 
 CustomeNavLink.propTypes = {
     href: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
     className: PropTypes.string.isRequired,
   };
+
+CustomeNavLink.defaultProps = {
+  className: '', 
+};
   
   CustomeLink.propTypes = {
     children: PropTypes.node.isRequired,
@@ -70,13 +74,13 @@ CustomeNavLink.propTypes = {
 };
 
 Badges.propTypes = {
-  color: PropTypes.isRequired,
+  color: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };
 
 
 export {
-  Title, 
+  // Title, 
   BodyOne, 
   BodyTwo, 
   Caption, 
