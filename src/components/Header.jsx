@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import logo from "../assets/images/logo.png";
 import {menuLists} from "../assets/data/data";
-import { Badges, CustomeLink, CustomeNavLink } from './CustomComponent';
+import { Badges, CustomLink, CustomNavLink } from './CustomComponent';
 import {IoSearchOutline, IoHeartOutline, IoCartOutline} from 'react-icons/io5';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useLocation } from 'react-router';
@@ -68,23 +68,23 @@ export const Header = () => {
             <div className="hidden lg:flex items-center justify-between gap-8">
               {menuLists.map((list) => (
                 <li key={list.id} className='uppercase list-none'>
-                  <CustomeNavLink href={list.path}>
+                  <CustomNavLink href={list.path}>
                     {list.link}
-                  </CustomeNavLink>
+                  </CustomNavLink>
                 </li>
               ))} 
             </div>
           </div>
 
-          <div className="flex items-center ml-10 gap-10 icons"> 
+          <div className="flex items-center ml-10 gap-8 icons"> 
             <div className="uppercase hidden lg:block text-inherit relative z-20">
               
-              <CustomeLink 
+              <CustomLink 
                 className={`${
-                  isScrolled || !isHomePage ? "text-white" : "text-primary"
+                  isScrolled || !isHomePage ? "text-primary" : "text-white"
                 }`}>
                 Login 
-              </CustomeLink>
+              </CustomLink>
               
               <span 
                  className={`${
@@ -93,16 +93,16 @@ export const Header = () => {
                 /
               </span>
             
-              <CustomeLink
+              <CustomLink
                 className={`${
                   isScrolled || !isHomePage ? "text-primary" : "text-white"
                 }`}>
                 Register
-              </CustomeLink>
+              </CustomLink>
             </div>
 
             <div 
-              className={`icons flex items-center justify-center gap-6 ${
+              className={`icons flex items-center justify-center gap-7 ${
                 isScrolled || !isHomePage ? "text-primary" : "text-white"
               }`}>
             
@@ -142,8 +142,8 @@ export const Header = () => {
             </div>
           </div>
         
-          <div className='flex items-center gap-8 icons'>
-          </div>
+          {/* <div className='flex items-center gap-8 icons'>
+          </div> */}
         
           <div ref={menuRef}
             className={`lg:flex lg:items-center lg:w-auto w-full p-5 absolute right-0 top-full menu-container ${
@@ -152,9 +152,9 @@ export const Header = () => {
           >
             {menuLists.map((list) => (
               <li key={list.id} className='uppercase list-none'>
-                <CustomeNavLink href={list.path} className="">
+                <CustomNavLink href={list.path} className="text-white">
                   {list.link}
-                </CustomeNavLink>
+                </CustomNavLink>
               </li>
             ))}
           </div>
