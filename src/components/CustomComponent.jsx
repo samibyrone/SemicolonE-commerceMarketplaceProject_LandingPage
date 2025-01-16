@@ -22,19 +22,19 @@ const Title = ({ level, children, className }) => {
 
 const BodyOne = ({ children, className }) => {
   const classes = "text-lg font-normal text-primary-gray md-4"
-  return <p className={`${className} ${classes}`}> {children}  </p>;
+  return <p className={`${className} ${classes}`}> {children} </p>;
 };
 
 const BodyTwo = ({ children }) => {
-  return <p className="text-base font-semibold text-white"> {children}  </p>;
+  return <p className="text-base font-semibold text-white"> {children} </p>;
 };
 
 const Caption = ({ children }) => {
-  return <p className="text-sm font-normal text-primary-gray">  {children}  </p>;
+  return <p className="text-sm font-normal text-primary-gray"> {children} </p>;
 };
       
 const Span = ({ children }) => {
-  return <span className="text-xs font-semibold text-white">  {children}  </span>;
+  return <span className="text-xs font-semibold text-white"> {children} </span>;
 };
 
 const CustomNavLink = ({ href, className, children }) => {
@@ -81,14 +81,18 @@ Title.propTypes = {
 };
 
 CustomNavLink.propTypes = {
-    href: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string.isRequired,
-  };
-  
-  CustomLink.propTypes = {
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
+};
+
+// CustomNavLink.defaultProps = {
+//   className: ''
+// };
+
+CustomLink.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 Badges.propTypes = {

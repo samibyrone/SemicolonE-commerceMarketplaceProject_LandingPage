@@ -55,7 +55,7 @@ export const Header = () => {
           <div 
             className={` ${
               isScrolled ? "lg:bg-none" : " lg:bg-black"
-            } lg:h-[105px] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:-z-10`}> 
+            } lg:h-[88px] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:-z-10`}> 
           </div>
         )}
 

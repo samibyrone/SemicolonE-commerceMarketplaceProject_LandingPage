@@ -1,10 +1,10 @@
-import { Hero } from "../../router";
+import { Hero, Product } from "../../router";
 
 export const Home = () => {
     return (
         <div>
             <Hero />
-            <h1>samson</h1>
+            <Product />
         </div>
     );
 };
