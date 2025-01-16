@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Title, BodyOne } from '../CustomComponent';
 import { promotionalInfo } from '../../assets/data/data';
 
