@@ -8,33 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import {MdKeyboardArrowRight, MdKeyboardArrowLeft} from "react-icons/md";
 
 
-function SampleNextArrow(props) {
-  const { onClick } = props;
-  return (
-    <div 
-      className="absolute top-[32%] -right-5 lg:-right-32 rounded-full slider-btn"
-      onClick={onClick}
-    >
-      <button className="next">
-        <MdKeyboardArrowRight size={50} />
-      </button>
-    </div>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { onClick } = props;
-  return (
-    <div 
-      className="absolute top-[32%] -left-5 lg:-left-32 rounded-full slider-btn z-10"
-      onClick={onClick}
-    >
-      <button className="next">
-        <MdKeyboardArrowLeft size={50} />
-      </button>
-    </div>
-  );
-}
 
 
 export const ProductSlide = () => {
