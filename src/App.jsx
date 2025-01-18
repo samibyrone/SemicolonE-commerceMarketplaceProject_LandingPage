@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Layout, Shop } from "./router";
+import { Home, Layout, ProductDetails, Shop } from "./router";
 import { Navbar } from './components/Navbar';
 
 
@@ -22,6 +22,15 @@ const App = () => {
               <Layout>
                 <Navbar />
                 <Shop />
+              </Layout>
+            }
+          />
+          <Route 
+            path="/product-details/:productId"
+            element = { 
+              <Layout>
+                {/* <Navbar /> */}
+                <ProductDetails />
               </Layout>
             }
           />

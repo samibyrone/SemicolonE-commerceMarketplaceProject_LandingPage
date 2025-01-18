@@ -1,3 +1,5 @@
+export { ProductDetails } from "../screen/product/ProductDetails.jsx";
+
 export { Shop } from "../screen/shop/Shop.jsx";
 
 export { InstagramPost } from "../components/hero/instagramPost.jsx";

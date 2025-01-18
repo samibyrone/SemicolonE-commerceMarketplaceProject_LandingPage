@@ -1,7 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { ProductCard } from '../../router';
+import { productlists } from '../../assets/data/data';
 
 export const Shop = () => {
   return (
-    <div>Shop</div>
-  )
-}
+    <>
+        <section className='container mt-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7'>
+            {productlists.map((product) => (
+                <ProductCard 
+                    id={product.id}
+                    key={product.key}
+                    title={product.title}
+                    description={product.description}
+                    images={product.images}
+                    price={product.price}
+                    discount={product.discount}
+                    rating={product.rating}
+                    featured={product.featured}
+                    category={product.category}
+                    color={product.color}
+                />
+            ))}
+        </section>
+    </>
+  );
+};

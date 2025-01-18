@@ -163,6 +163,7 @@ body{
 
 .active-link {
   color: #0d775e !important;
+  /* background-color: re; */
 }
 
 /* keyFrames for fadeInDown animation */
