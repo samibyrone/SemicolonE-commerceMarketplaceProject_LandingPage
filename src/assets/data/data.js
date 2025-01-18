@@ -269,6 +269,7 @@ export const productlists = [
 ];
 
 /* import { FaShippingFast } from "react-icons/fa";
+
   import { MdOutlineMarkUnreadChatAlt } from "react-icons/md";
   import { FaCircleDollarToSlot } from "react-icons/fa6";
   
@@ -293,6 +294,7 @@ export const productlists = [
     },
   ];
    */
+  
 export const promotionalInfo = [
   {
     id: 1,

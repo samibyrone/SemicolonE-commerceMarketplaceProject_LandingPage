@@ -1,3 +1,9 @@
+export { Shop } from "../screen/shop/Shop.jsx";
+
+export { InstagramPost } from "../components/hero/instagramPost.jsx";
+
+export { Testimony } from "../components/hero/Testimony.jsx";
+
 export { ProductSlide } from "../components/products/ProductSlide.jsx";
 
 export { Banner } from "../components/products/Banner.jsx";
