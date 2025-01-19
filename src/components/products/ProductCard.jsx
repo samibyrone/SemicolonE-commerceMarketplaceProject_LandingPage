@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { IoCard } from 'react-icons/io5';
+import { IoCart } from 'react-icons/io5';
 import { IoMdHeart } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 import { BodyOne } from '../CustomComponent';           
@@ -37,6 +37,14 @@ export const ProductCard = ({id, key, title, description, images, price, discoun
         setIsModalOpen(false);
     };
 
+    const discountPrice = price[0].value - (price[0].value * discount) / 100;
+
+    const addToCart = () => {
+        dispatch (
+            CartActions.addToCart({ id, title, price: discountPrice, images })
+        );
+    };
+
     return (
     <>
         <div className="product card">
@@ -64,10 +72,15 @@ export const ProductCard = ({id, key, title, description, images, price, discoun
                     >
                         Quick View
                     </button>
-                    <button className="add-to-cart-btn product-btn primary-btn">
-                        <IoCard size={25}/>
+                    <button 
+                        onClick={addToCart}
+                        className="add-to-cart-btn product-btn primary-btn"
+                    >
+                        <IoCart size={25}/>
                     </button>
-                    <button className="love-btn product-btn primary-btn">
+                    <button 
+                        className="love-btn product-btn primary-btn"
+                    >
                         <IoMdHeart size={25}/>
                     </button>
                 </div>

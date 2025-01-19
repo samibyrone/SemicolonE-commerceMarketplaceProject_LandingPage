@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import logo from "../assets/images/logo.png";
 import {menuLists} from "../assets/data/data";
-import { Badges, CustomLink, CustomNavLink } from './CustomComponent';
-import {IoSearchOutline, IoHeartOutline, IoCartOutline} from 'react-icons/io5';
+import { CustomLink, CustomNavLink } from './CustomComponent';
+import {IoSearchOutline } from 'react-icons/io5';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useLocation } from 'react-router';
+import { Cart } from './cart/Cart';
 
 
 export const Header = () => {
@@ -108,30 +109,10 @@ export const Header = () => {
             
               <IoSearchOutline size={25} />
 
-              <div className="relative z-20">
-
-                <IoHeartOutline size={25} />
-                
-                <div className="absolute -top-2 -right-1.5">
-
-                  <Badges color="bg-primary-green">10</Badges>
-                
-                </div>
-
-                <div className="relative z-20">
-                
-                  <IoCartOutline size={25} />
-                
-                  <div className="absolute -top-2 -right-1.5">
-                
-                    <Badges color="bg-primary-green">0</Badges>
-                
-                  </div>
-                </div>
-              </div>
+              <Cart />
               
               <button onClick={toggleMenu}
-                // className="lg:hidden w-10 h-10 flex justify-center items-center bg-black text-white focus:outline-none"
+                className="lg:hidden w-10 h-10 flex justify-center items-center bg-black text-white focus:outline-none"
               >
                   {isOpen ? (
                     <AiOutlineClose size={25}/>
@@ -142,8 +123,7 @@ export const Header = () => {
             </div>
           </div>
         
-          {/* <div className='flex items-center gap-8 icons'>
-          </div> */}
+          {/* <div className="flex items-center gap-8 icons"></div> */}
         
           <div ref={menuRef}
             className={`lg:flex lg:items-center lg:w-auto w-full p-5 absolute right-0 top-full menu-container ${

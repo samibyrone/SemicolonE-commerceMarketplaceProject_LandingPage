@@ -86,10 +86,6 @@ CustomNavLink.propTypes = {
   className: PropTypes.string.isRequired,
 };
 
-// CustomNavLink.defaultProps = {
-//   className: ''
-// };
-
 CustomLink.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string.isRequired,
