@@ -121,13 +121,13 @@ export const ProductDetails = () => {
                             <Caption>Prices</Caption>
                             <div className="flex items-center gap-3">
                                 <BodyOne className="line-through mt-4">
-                                    ${selectedPrice.value}
+                                    ₦{selectedPrice.value}
                                 </BodyOne>
                                 <Title level={4} className="text-primary-green">
-                                    ${" "}
+                                    ₦{" "}
                                     {(
                                         selectedPrice.value - (selectedPrice.value * product.discount) / 100
-                                    ).toFixed(2)}
+                                    ).toFixed(3)}
                                 </Title>
                             </div>
                         </div>

@@ -12,12 +12,15 @@ export const Footer = () => {
             <img src={logoImg} alt="Logo" className="h-7"/>
 
             <div className='flex flex-col gap-2 mt-5'>
-              <Caption>Address : </Caption>
-              <Caption>Email : </Caption>
-              <Caption>Call : </Caption>
+              <Caption>Address : 312, Herbert Macaulay Way, Sabo Yaba, Lagos.</Caption>
+              <Caption>Email : info@semicolon.africa</Caption>
+              <Caption>Call : +2349060008609</Caption>
             </div>
             <br />
-            <BodyOne>Subcribe To Our Newsletter</BodyOne>
+            <BodyOne>
+              Subscribe To Our Newsletter To Stay Connected On Our Products,
+              get Offers And Updates
+            </BodyOne>
             <input 
               type="text" 
               className='p-3 w-full border bg-white-100 border-gray-300 rounded-md outline-none'

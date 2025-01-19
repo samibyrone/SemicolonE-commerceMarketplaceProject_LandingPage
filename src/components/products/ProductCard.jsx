@@ -96,14 +96,14 @@ export const ProductCard = ({id, key, title, description, images, price, discoun
                     {price.slice(0, 1).map((priceItem, index) => (
                         <>
                             <BodyOne className="line-through" key={index}>
-                                ${priceItem.value}
+                                ₦{priceItem.value}
                             </BodyOne>
                             <BodyOne className="text-primary-green">
-                                $
+                                ₦
                                 {(
                                     priceItem.value - 
                                     (priceItem.value * discount) / 100
-                                ).toFixed(2)}
+                                ).toFixed(3)}
                             </BodyOne>
                         </>
                     ))}
@@ -139,14 +139,14 @@ export const ProductCard = ({id, key, title, description, images, price, discoun
                                 {price.slice(0, 1).map((priceItem, index) => (
                                     <div className="flex items-center gap-3" key={index}>
                                         <BodyOne className="line-through mt-4">
-                                            ${priceItem.value}
+                                            ₦{priceItem.value}
                                         </BodyOne>
                                         <Title level={3} className="text-primary-green">
-                                            $
+                                            ₦
                                             {(
                                                 priceItem.value - 
                                                 (priceItem.value * discount) / 100
-                                            ).toFixed(2)}
+                                            ).toFixed(3)}
                                         </Title> 
                                     </div>
                                 ))}

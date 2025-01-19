@@ -1,3 +1,14 @@
+import shoe from "../images/shoe.png";
+import shoe2 from "../images/shoe2.png";
+import shoe3 from "../images/shoe3.png";
+import suit from "../images/suit.png";
+import suit2 from "../images/suit2.png";
+import suit3 from "../images/suit3.png";
+import tux from "../images/tux.png";
+import tux2 from "../images/tux2.png";
+import tux3 from "../images/tux3.png";
+
+
 export const menuLists = [
   {
     id: 1,
@@ -36,7 +47,7 @@ export const herolist = [
     id: 1,
     title: "GALUIN Men's Sneakers Products",
     description: "GALUIN 2024 Men's Casual Shoes Sneakers Big Size 39-47.",
-    image: "../images/shoe.png",   
+    image: shoe,   
     price: [
       { color: "red", value: 12.800 },
       { color: "yellow", value: 10.400 },
@@ -53,7 +64,7 @@ export const herolist = [
     id: 2,
     title: "KANGERDUN Men's Leather Shoe Products",
     description: "KANGERDUN Men Leather Shoes Oxford Wedding Corporate Formal Loafers Slip - Black.",
-    image: "../images/shoe2.png",
+    image: shoe2,
     price: [
       { color: "red", value: 13.900 },
       { color: "yellow", value: 12.400 },
@@ -70,7 +81,7 @@ export const herolist = [
     id: 3,
     title: "ALAGZI Men's Casual Shoe Products",
     description: "ALagzi Mens Casual High-Top Shoes Running Sneakers - Beige.",
-    image: "../images/shoe3.png",
+    image: shoe3,
     price: [
       { color: "red", value: 20.900 },
       { color: "yellow", value: 18.400 },
@@ -87,40 +98,39 @@ export const herolist = [
 export const productlists = [
   {
     id: 1,
-    title: "Wooden single drawer",
-    description: "Enhance your home decor with our Wooden Single Drawer. Crafted with precision and designed for functionality, this drawer provides ample storage space while adding a touch of elegance to any room. The rich wooden finish complements a variety of interior styles, making it a versatile addition to your home. The discount of 10% makes it an affordable choice, and with a rating of 2.5, it's a reliable and stylish furniture piece. Featured as a top pick, this drawer is a must-have for those who appreciate quality craftsmanship.",
+    title: "Men’s Slim Fit Suit Corporate Suit",
+    description: "",
     images: [
-      { image: "../images/product/product1.png" },
-      { image: "../images/product/product1.3.png" },
-      { image: "../images/product/product1.2.png" }
+      { image: suit },
+      { image: suit2 },
+      { image: suit3 }
     ],
     discount: 10,
     rating: 2.5,
     featured: true,
     price: [
-      { color: "red", value: 135.78 },
-      { color: "yellow", value: 185.27 },
-      { color: "green", value: 125.62 }
+      { color: "red", value: 65.000 },
+      { color: "yellow", value: 63.000 },
+      { color: "green", value: 68.000 }
     ],
     color: [{ value: "red" }, { value: "yellow" }, { value: "green" }]
   },
   {
     id: 2,
-    title: "Wooden Serving Bowl",
-    description:
-      "Elevate your dining experience with our exquisite Wooden Serving Bowl. Carved from high-quality wood, this bowl brings a touch of nature to your table. Its deep design is perfect for serving salads, fruits, or your favorite dishes. The 15% discount makes it an excellent deal, and with a rating of 4.2, it combines style and functionality seamlessly. Although not featured, this bowl stands out as a practical and beautiful addition to your kitchen.",
+    title: "Standard Chinese Suit Set Tuxedo",
+    description: "(2pcs-white)Plus Size S-6XL Men Suit Chinese Style Stand Collar Suit Male Wedding Groom Slim Fit Standerd Size Blazer Set Tuxedo Jacket+Pant MAA",
     images: [
-      { image: "../images/product/product2.png" },
-      { image: "../images/product/product1.3.png" },
-      { image: "../images/product/product1.2.png" }
+      { image: tux3 },
+      { image: tux },
+      { image: tux2 }
     ],
     discount: 15,
     rating: 4.2,
     featured: false,
     price: [
-      { color: "blue", value: 99.99 },
-      { color: "white", value: 120.5 },
-      { color: "brown", value: 85.75 }
+      { color: "blue", value: 74.700 },
+      { color: "white", value: 76.500 },
+      { color: "black", value: 73.500 }
     ],
     color: [
       { value: "blue" }, 
@@ -294,7 +304,7 @@ export const productlists = [
     },
   ];
    */
-  
+
 export const promotionalInfo = [
   {
     id: 1,

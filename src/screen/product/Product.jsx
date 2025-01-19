@@ -8,11 +8,11 @@ export const Product = () => {
     <>
         <section className="py-20 bg-white-100">
             <div className="container">
-                <Title level={4}>Most Popular products</Title>
+                <Title level={3}>Most Popular products</Title>
                 <div className="flex items-center gap-3 uppercase">
                   <BodyOne className="text-sm">All Products (40)</BodyOne>
                   <BodyOne className="text-sm text-primary-green">
-                    Fashoin Products (20)
+                    Fashion Products (20)
                   </BodyOne>
                 </div>
 

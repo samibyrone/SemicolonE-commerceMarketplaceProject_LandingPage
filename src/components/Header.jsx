@@ -123,7 +123,8 @@ export const Header = () => {
             </div>
           </div>
         
-          {/* <div className="flex items-center gap-8 icons"></div> */}
+          {/* <div className="flecart item 
+          x items-center gap-8 icons"></div> */}
         
           <div ref={menuRef}
             className={`lg:flex lg:items-center lg:w-auto w-full p-5 absolute right-0 top-full menu-container ${
