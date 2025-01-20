@@ -60,7 +60,7 @@ export const ProductCard = ({id, key, title, description, images, price, discoun
                 <div className="flex justify-between w-full p-5 absolute top-0 left-0">
                     {discount && <button className="discount-btn">{discount}%</button>}
                     {featured && ( 
-                        <button className="featured-btn">
+                        <button className="justify-center bg-primary-green p-1">
                             {featured === true && "Featured"}
                         </button>
                     )}

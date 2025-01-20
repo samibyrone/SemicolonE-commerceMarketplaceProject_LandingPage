@@ -55,17 +55,17 @@ export const Testimony = () => {
 
   return (
     <>
-      <section className="testimony">
-        <div className="container h-full flex items-center justify-center">
+      <section className="testimony m-20">
+        <div className="container h-full flex items-center justify-center gap-5">
           <div className="w-1/2 flex relative z-50">
             <div className='box w-96 h-96 bg-white rounded-full z-50'>
               <img 
                 src={testimony} 
                 alt="Testimony" 
-                className="absolute -top-[130px] left-0 z-10 rounded-b-full "
+                className="absolute -top-[50px] pt-10 left-0 z-10 rounded-b-full "
               />
             </div>
-            <div className="bg-[rgba(255, 255, 255, 0.5)] px-5 backdrop-blur-sm p-3 rounded-lg absolute top-30 right-60 z-50">
+            <div className="bg-[rgba(255, 255, 255, 0.5)] px-1 backdrop-blur-sm p-20 mt-20 rounded-lg absolute top-24 right-56 z-50">
               <BodyOne className="leading-none">Our Satified Customer</BodyOne>
 
               <div className="flex items-center">

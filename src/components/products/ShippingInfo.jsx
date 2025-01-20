@@ -52,9 +52,9 @@ export const ShippingInfo = () => {
                                 Get Latest News, Offers And Discounts.
                             </BodyOne>
                         </div>
-                    </div>
                     <div className="left w-full p-5 px-8 lg:w-1/2">
                         <input type="text" className="outline-none w-full p-3" />
+                    </div>
                     </div>
                 </div>
             </section>

@@ -7,6 +7,47 @@ import suit3 from "../images/suit3.png";
 import tux from "../images/tux.png";
 import tux2 from "../images/tux2.png";
 import tux3 from "../images/tux3.png";
+import casual from "../images/casual.png";
+import casual2 from "../images/casual2.png";
+import casual3 from "../images/casual3.png";
+import top from "../images/top.png";
+import top2 from "../images/top2.png";
+import top3 from "../images/top3.png";
+import laceShoe from "../images/laceShoe.png";
+import laceShoe2 from "../images/laceShoe2.png";
+import laceShoe3 from "../images/laceShoe3.png";
+import dress from "../images/dress.png";
+import dress2 from "../images/dress2.png";
+import dress3 from "../images/dress3.png";
+import sleeve from "../images/sleeve.png";
+import sleeve2 from "../images/sleeve2.png";
+import sleeve3 from "../images/sleeve3.png";
+import ankara from "../images/ankara.png";
+import ankara2 from "../images/ankara2.png";
+import ankara3 from "../images/ankara3.png";
+import flatshoe from "../images/flatshoe.png";
+import flatshoe2 from "../images/flatshoe2.png";
+import algazi from "../images/algazi.png";
+import algazi2 from "../images/algazi2.png";
+import algazi3 from "../images/algazi3.png";
+import joggers from "../images/joggers.png";
+import joggers2 from "../images/joggers2.png";
+import joggers3 from "../images/joggers3.png";
+import leather from "../images/leather.png";
+import leather2 from "../images/leather2.png";
+import leather3 from "../images/leather3.png";
+import polo from "../images/polo.png";
+import polo2 from "../images/polo2.png";
+import crochet from "../images/crochet.png";
+import crochet2 from "../images/crochet2.png";
+import crochet3 from "../images/crochet3.png";
+import vintage from "../images/vintage.png";
+import vintage2 from "../images/vintage2.png";
+import vintage3 from "../images/vintage3.png";
+import jean from "../images/jean.png";
+import jean2 from "../images/jean2.png";
+import shipping2 from "../images/shipping2.png";
+import freeshipping from "../images/freeshipping.png";
 
 
 export const menuLists = [
@@ -140,20 +181,20 @@ export const productlists = [
   },
   {
     id: 3,
-    title: "Wooden Glass",
-    description: "Sip in style with our Wooden Glass collection. Crafted with precision, these wooden glasses add a natural touch to your beverage experience. The set includes glasses in various colors to suit your mood. With a 12% discount, these glasses offer both aesthetics and affordability. Rated at 4.5, these glasses are perfect for daily use or special occasions, making them a versatile addition to your glassware collection.",
+    title: "COOFENRISY Men's Casual Wear",
+    description: "Flower Casual Button Down Short Sleeve Hawaiian Shirt Suits",
     images: [
-      { image: "../images/product/product3.png" },
-      { image: "../images/product/product1.2.png" },
-      { image: "../images/product/product1.1.png" }
+      { image: casual },
+      { image: casual2 },
+      { image: casual3 }
     ],
     discount: 12,
     rating: 4.5,
     featured: true,
     price: [
-      { color: "clear", value: 29.99 },
-      { color: "brown", value: 35.5 },
-      { color: "green", value: 27.75 }
+      { color: "clear", value: 15.500 },
+      { color: "brown", value: 11.500 },
+      { color: "green", value: 12.500 }
     ],
     color: [
       { value: "clear" }, 
@@ -163,20 +204,20 @@ export const productlists = [
   },
   {
     id: 4,
-    title: "Wooden Cup",
-    description: "Experience the warmth of wooden craftsmanship with our Wooden Cup collection. Each cup is meticulously crafted to bring a rustic charm to your kitchen. The 18% discount makes it an excellent value, and with a high rating of 4.8, these cups are a favorite among those who appreciate quality. Not featured, but certainly not to be overlooked, these wooden cups are perfect for enjoying your favorite beverages.",
+    title: "GALUIN Men's Short",
+    description: "GALUIN 2 In 1 Men's Short Sleeve Shorts Casual Set-White",
     images: [
-      { image: "../images/product/product4.png" },
-      { image: "../images/product/product1.1.png" },
-      { image: "../images/product/product1.2.png" }
+      { image: top },
+      { image: top2 },
+      { image: top3 }
     ],
     discount: 18,
     rating: 4.8,
     featured: false,
     price: [
-      { color: "natural", value: 19.99 },
-      { color: "dark brown", value: 22.5 },
-      { color: "light brown", value: 17.75 }
+      { color: "natural", value: 12.000 },
+      { color: "dark brown", value: 10.000 },
+      { color: "light brown", value: 8.500 }
     ],
     color: [
       { value: "natural" },
@@ -186,43 +227,43 @@ export const productlists = [
   },
   {
     id: 5,
-    title: "Wooden Coffee Mug",
-    description: "Start your day with the charm of our Wooden Coffee Mugs. Crafted with care, these mugs bring a touch of nature to your morning routine. The 15% discount ensures affordability without compromising on style. With a rating of 4.0, these mugs are not just functional but also visually appealing. While not featured, they are a delightful addition to any coffee lover's collection.",
+    title: "Danami joggers and Crop Hoodies",
+    description: "Indulge in luxury with our Elegant and Comfortable Danami Women's Set Of Joggers And Crop Hoodie (Up & Down)- Light Grey.",
     images: [
-      { image: "../images/product/product5.png" },
-      { image: "../images/product/product1.3.png" },
-      { image: "../images/product/product1.2.png" }
+      { image: joggers },
+      { image: joggers2 },
+      { image: joggers3 }
     ],
-    discount: 15,
-    rating: 4.0,
-    featured: false,
+    discount: 25,
+    rating: 4.8,
+    featured: true,
     price: [
-      { color: "dark", value: 14.99 },
-      { color: "light", value: 18.5 },
-      { color: "white", value: 12.75 }
+      { color: "black", value: 17.500 },
+      { color: "gray", value: 15.500 },
+      { color: "beige", value: 16.000 }
     ],
     color: [
-      { value: "dark" }, 
-      { value: "light" }, 
-      { value: "white" }
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
     ]
   },
   {
     id: 6,
-    title: "Wooden Brush",
-    description: "Upgrade your grooming routine with our Wooden Brush collection. Made with high-quality materials, these brushes offer a natural and comfortable grooming experience. The 20% discount makes them a great value, and with a rating of 4.2, they are a reliable choice for your daily routine. Although not featured, these wooden brushes stand out for their durability and eco-friendly design.",
+    title: "Casual Turkey Wears Dress",
+    description: "Dinner Gown For Ladies Women Office Skirt Casual Turkey Wears Dress.",
     images: [
-      { image: "../images/product/product6.png" },
-      { image: "../images/product/product1.2.png" },
-      { image: "../images/product/product1.1.png" }
+      { image: dress },
+      { image: dress2 },
+      { image: dress3 }
     ],
     discount: 20,
     rating: 4.2,
     featured: true,
     price: [
-      { color: "natural", value: 9.99 },
-      { color: "brown", value: 12.5 },
-      { color: "black", value: 8.75 }
+      { color: "natural", value: 15.500 },
+      { color: "brown", value: 12.500 },
+      { color: "black", value: 11.700 }
     ],
     color: [
       { value: "natural"}, 
@@ -232,20 +273,20 @@ export const productlists = [
   },
   {
     id: 7,
-    title: "Wooden Bottles",
-    description: "Elevate your hydration experience with our Wooden Bottles. Crafted with precision and designed for durability, these bottles are an eco-friendly choice for your daily water intake. The 15% discount makes them an affordable and sustainable option. With a rating of 3.5, these bottles are a practical and stylish addition to your daily routine.",
+    title: "Luxury Top Sleeve Top For Ladies",
+    description: "Elevate your hydration experience with our Luxury Top Sleeve Top For Ladies.",
     images: [
-      { image: "../images/product/product7.png" },
-      { image: "../images/product/product1.3.png" },
-      { image: "../images/product/product1.1.png" }
+      { image: sleeve },
+      { image: sleeve2 },
+      { image: sleeve3 }
     ],
     discount: 15,
     rating: 3.5,
     featured: false,
     price: [
-      { color: "blue", value: 24.99 },
-      { color: "green", value: 29.5 },
-      { color: "brown", value: 22.75 }
+      { color: "blue", value: 10.000 },
+      { color: "green", value: 8.700 },
+      { color: "brown", value: 11.200 }
     ],
     color: [
       { value: "blue" }, 
@@ -255,20 +296,204 @@ export const productlists = [
   },
   {
     id: 8,
-    title: "Luxury Couch",
-    description: "Indulge in luxury with our Elegant and Comfortable Wooden Couch. Crafted with meticulous attention to detail, this couch adds a touch of sophistication to your living room. The 25% discount makes it a premium choice without compromising on quality. With an impressive rating of 4.8, this couch is a featured product for those who seek both style and comfort.",
+    title: "Signature ANKARA DRESS",
+    description: "Indulge in luxury with our Elegant and Comfortable Osc Signature OSC SOLA SHIRT ANKARA DRESS.",
     images: [
-      { image: "../images/product/product8.png" },
-      { image: "../images/product/product1.2.png" },
-      { image: "../images/product/product1.3.png" }
+      { image: ankara },
+      { image: ankara2 },
+      { image: ankara3 }
     ],
     discount: 25,
     rating: 4.8,
     featured: true,
     price: [
-      { color: "black", value: 799.99 },
-      { color: "gray", value: 849.5 },
-      { color: "beige", value: 780.75 }
+      { color: "black", value: 17.500 },
+      { color: "gray", value: 15.500 },
+      { color: "beige", value: 16.000 }
+    ],
+    color: [
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
+    ]
+  },
+  {
+    id: 9,
+    title: "Ladies Casual Flat Shoe",
+    description: "Women Shoes Sandals Flat Ladies Shoes Casual Shoes - Gold.",
+    images: [
+      { image: flatshoe },
+      { image: flatshoe2 },
+      { image: flatshoe }
+    ],
+    discount: 25,
+    rating: 4.8,
+    featured: true,
+    price: [
+      { color: "black", value: 8.500 },
+      { color: "gray", value: 7.500 },
+      { color: "beige", value: 8.000 }
+    ],
+    color: [
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
+    ]
+  },
+  {
+    id: 10,
+    title: "Men's Sneakers Lace Up Shoes",
+    description: "The 15% discount ensures affordability without compromising on style. but they are a delightful loving collection.",
+    images: [
+      { image: laceShoe },
+      { image: laceShoe2 },
+      { image: laceShoe3 }
+    ],
+    discount: 15,
+    rating: 4.0,
+    featured: false,
+    price: [
+      { color: "dark", value: 40.000 },
+      { color: "light", value: 38.500 },
+      { color: "white", value: 35.000 }
+    ],
+    color: [
+      { value: "dark" }, 
+      { value: "light" }, 
+      { value: "white" }
+    ]
+  },
+  {
+    id: 11,
+    title: "Classic Alagzi Fashion Shoe ",
+    description: "Indulge in luxury with our Elegant and Comfortable ALagzi 2024 Ladies Classic Fashion Casual Shoes - Khaki.",
+    images: [
+      { image: algazi },
+      { image: algazi2 },
+      { image: algazi3 }
+    ],
+    discount: 25,
+    rating: 4.8,
+    featured: true,
+    price: [
+      { color: "black", value: 11.500 },
+      { color: "gray", value: 10.000 },
+      { color: "beige", value: 11.000 }
+    ],
+    color: [
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
+    ]
+  },
+  {
+    id: 12,
+    title: "Pointed Leather Men's Shoe",
+    description: "Indulge in luxury with our Elegant and Comfortable Men's Thick-Soled Pointed Leather Shoes Business Shoes Red.",
+    images: [
+      { image: leather },
+      { image: leather2 },
+      { image: leather3 }
+    ],
+    discount: 25,
+    rating: 4.8,
+    featured: true,
+    price: [
+      { color: "black", value: 55.500 },
+      { color: "gray", value: 53.500 },
+      { color: "beige", value: 52.000 }
+    ],
+    color: [
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
+    ]
+  },
+  {
+    id: 13,
+    title: "Berrykey Men's Stitching Polos Shirt",
+    description: "Indulge in luxury with our Elegant and Comfortable Berrykey Men's Color Stitching Polos Shirt Round Neck Short Sleeve T-shirt Business.",
+    images: [
+      { image: polo },
+      { image: polo2 },
+      { image: polo }
+    ],
+    discount: 25,
+    rating: 4.8,
+    featured: true,
+    price: [
+      { color: "black", value: 15.000 },
+      { color: "gray", value: 12.500 },
+      { color: "beige", value: 10.700 }
+    ],
+    color: [
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
+    ]
+  },
+  {
+    id: 14,
+    title: "Crochet Outfit-Multicolored",
+    description: "Indulge in luxury with our Elegant and Comfortable 2 Piece Trendy Crochet Outfit-Multicolored.",
+    images: [
+      { image: crochet },
+      { image: crochet2 },
+      { image: crochet3 }
+    ],
+    discount: 25,
+    rating: 4.8,
+    featured: true,
+    price: [
+      { color: "black", value: 25.500 },
+      { color: "gray", value: 23.000 },
+      { color: "beige", value: 22.500 }
+    ],
+    color: [
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
+    ]
+  },
+  {
+    id: 15,
+    title: "Vintage Floral Men's Polo",
+    description: "Indulge in luxury with our Elegant and Comfortable Mens Long Sleeve Casual Pattern Vintage Floral Polo Business Official Shirts.",
+    images: [
+      { image: vintage },
+      { image: vintage2 },
+      { image: vintage3 }
+    ],
+    discount: 25,
+    rating: 4.8,
+    featured: true,
+    price: [
+      { color: "black", value: 15.500 },
+      { color: "gray", value: 13.500 },
+      { color: "beige", value: 12.000 }
+    ],
+    color: [
+      { value: "black" }, 
+      { value: "gray" }, 
+      { value: "beige" }
+    ]
+  },
+  {
+    id: 16,
+    title: "Ladies High Waist Skinny Jean",
+    description: "Indulge in luxury with our Elegant and Comfortable Ladies High Waist Skinny Jean- Black.",
+    images: [
+      { image: jean },
+      { image: jean2 },
+      { image: jean }
+    ],
+    discount: 25,
+    rating: 4.8,
+    featured: true,
+    price: [
+      { color: "black", value: 23.500 },
+      { color: "gray", value: 22.500 },
+      { color: "beige", value: 23.000 }
     ],
     color: [
       { value: "black" }, 
@@ -308,57 +533,57 @@ export const productlists = [
 export const promotionalInfo = [
   {
     id: 1,
-    title: "Free Shipping On All Orders Over $59",
-    description: "Shop & shipment across the whole North America. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
-    image: "../images/promotional/prom1.png"
+    title: "Free Shipping On All Orders Over ₦ 5,000",
+    description: "Shop & shipment across Lagos and the whole Nigeria. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
+    image: freeshipping
   },
   {
     id: 2,
-    title: "From $29.05",
-    description: "Organic Skincare for Glowing Complexion. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
-    image: "../images/promotional/prom2.png"
+    title: "Free Shipping From ₦ 5,000",
+    description: "Get Classic Wear at a Good rate to Any Location of your Choice. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
+    image: shipping2
   }
 ];
 
 export const instagramPosts = [
   {
     id: 1,
-    image: "../images/posts/post1.png",
+    image: laceShoe,
     caption: "Caption for post 1",
     likes: 150,
     comments: 25
   },
   {
     id: 2,
-    image: "../images/posts/post2.png",
+    image: crochet2,
     caption: "Caption for post 2",
     likes: 200,
     comments: 30
   },
   {
     id: 3,
-    image: "../images/posts/post3.png",
+    image: leather2,
     caption: "Caption for post 3",
     likes: 180,
     comments: 20
   },
   {
     id: 4,
-    image: "../images/posts/post4.png",
+    image: dress,
     caption: "Caption for post 4",
     likes: 250,
     comments: 40
   },
   {
     id: 5,
-    image: "../images/posts/post5.png",
+    image: polo2,
     caption: "Caption for post 5",
     likes: 300,
     comments: 35
   },
   {
     id: 6,
-    image: "../images/posts/post6.png",
+    image: jean2,
     caption: "Caption for post 6",
     likes: 190,
     comments: 15
