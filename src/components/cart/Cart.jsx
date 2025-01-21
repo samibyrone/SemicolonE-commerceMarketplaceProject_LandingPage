@@ -50,7 +50,32 @@ export const Cart = () => {
                             isClosing ? "closing" : ""
                         }`}
                     >
-                        Cart
+                        <div className='flex justify-between gap-5'>
+                            <button 
+                                className={`flex items-center gap-2 font-medium ${
+                                    activeTab === "cart" ? "text-primary" : "" }`} 
+                                    onClick={() => handleTabChange("cart")}
+                            >
+                                Shopping Cart
+                                <span className='w-7 h-7 text-[11px] font-normal rounded-full text-white grid place-content-center bg-pr'>
+                                    0
+                                </span>
+                            </button>
+                            <button 
+                                className={`flex items-center gap-2 font-medium ${
+                                    activeTab === "wishlist" ? "text-primary" : "" }`} 
+                                    onClick={() => handleTabChange("wishlist")}
+                            >
+                                Wishlist
+                                <span className='w-7 h-7 text-[11px] font-normal rounded-full text-white grid place-content-center bg-pr'>
+                                    0
+                                </span>
+                            </button>
+                        </div>
+                        <div className="line-container">
+                            <div className={`line ${activeTab === "cart" ? "active" : ""}`}
+                            ></div>
+                        </div>
                     </div>
                 </>
             )}
