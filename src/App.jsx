@@ -29,7 +29,6 @@ const App = () => {
             path="/product-details/:productId"
             element = { 
               <Layout>
-                {/* <Navbar /> */}
                 <ProductDetails />
               </Layout>
             }

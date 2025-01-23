@@ -46,7 +46,7 @@ export const Header = () => {
       <header 
         className={
           isHomePage
-            ? `$ header px-1 py-3 space-x-12 bg-white-100 relative z-20 ${
+            ? `$ header px-12 py-3 space-x-12 bg-white-100 relative z-20 ${
               isScrolled ? "scrolled" : ""
             }`
              : `header px-12 py-3 relative z-20 ${isScrolled ? "scrolled" : ""}`
@@ -56,7 +56,7 @@ export const Header = () => {
           <div 
             className={` ${
               isScrolled ? "lg:bg-none" : " lg:bg-black"
-            } lg:h-[106px] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:-z-10`}> 
+            } lg:h-[86px] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:-z-10`}> 
           </div>
         )}
 
@@ -77,7 +77,7 @@ export const Header = () => {
             </div>
           </div>
 
-          <div className="flex items-center ml-10 gap-8 icons"> 
+          <div className="flex items-center gap-8 icons"> 
             <div className="uppercase hidden lg:block text-inherit relative z-20">
               
               <CustomLink 

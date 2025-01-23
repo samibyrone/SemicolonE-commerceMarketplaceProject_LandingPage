@@ -76,24 +76,24 @@ const Badges = ({color, children}) => {
 
 Title.propTypes = {
   level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string.isRequired,
+  children: PropTypes.isRequired,
+  className: PropTypes.isRequired,
 };
 
 CustomNavLink.propTypes = {
-  href: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string.isRequired,
+  href: PropTypes.isRequired,
+  children: PropTypes.isRequired,
+  className: PropTypes.isRequired,
 };
 
 CustomLink.propTypes = {
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string.isRequired,
+  children: PropTypes.isRequired,
+  className: PropTypes.isRequired,
 };
 
 Badges.propTypes = {
-  color: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
+  color: PropTypes.isRequired,
+  children: PropTypes.isRequired,
 };
 
 
