@@ -6,6 +6,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {MdKeyboardArrowRight, MdKeyboardArrowLeft} from "react-icons/md";
+import tux from "../../assets/images/tux.png";
+import braclet2 from "../../assets/images/bracklet2.png";
+import Lshoe from "../../assets/images/lshoe.png";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -97,7 +100,7 @@ export const HeroItem = ({title, description, prices, colors, image}) => {
             <div>
               <Caption>prices</Caption>
               <div className="mt-3">
-                <Title level={5}>₦{selectedPrice.value.toFixed(3)}</Title>
+                <Title level={5}> {selectedPrice.value.toFixed(3)}</Title>
               </div>
             </div>
             <div>
@@ -124,8 +127,7 @@ export const HeroItem = ({title, description, prices, colors, image}) => {
         <div className="right bg-white p-5 w-1/2 h-full flex justify-center items-center relative z-50">
           <img src={image} alt="" className="h-[60vh] w-full object-contain" />
         </div>
-        <div 
-          className=" lg:bg-black lg:h-[90vh] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:z-10">  </div>
+        <div className=" lg:bg-black lg:h-[90vh] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:z-10"></div>
       </section>
     </>
   );
@@ -139,20 +141,20 @@ const Banner = () => {
           <BannerCard 
             title="Executive Men's Slim Fit Suit - Dark Green" 
             desc="UP TO 60% OFF" 
-            cover="../../assets/images/suit.png" 
+            cover= { tux }
           />
         </div>
-        <div className="flex justify-between flex-col gap-8">
+        <div className="flex justify-between flex-col gap-5">
           <BannerCard 
-            title="meeeeeeeee" 
+            title="Pointed Leather Men's Shoe" 
             desc="UP TO 60% OFF"  
-            cover="./images/hero/product2.png" 
-            className={true}
+            cover= { braclet2 }
+            className={true}  
             />
           <BannerCard 
-            title="yooooooooooooooou" 
+            title="Men's Sneakers Lace Up Shoes" 
             desc="UP TO 60% OFF" 
-            cover="./images/hero/product3.png"
+            cover= { Lshoe }
             className={true}
             classSecond={true} 
             />
@@ -165,7 +167,7 @@ const Banner = () => {
 const BannerCard = ({title, desc, cover, className, classSecond}) => {
   return (
     <>
-      <div className="w-full h-full relative">
+      <div className="w-full h-1/2 relative">
         <img src={cover} alt="" />
         
         <div className={`${
@@ -174,8 +176,8 @@ const BannerCard = ({title, desc, cover, className, classSecond}) => {
           : "flex absolute bottom-0 p-8 w-full"
           } ${className && classSecond ? "left-0 lg:left-48 top-0 w-96" : ""}`}>
             <div>
-              <Title level={2}>{title}</Title>
-              <p className="text-lg font-normal leading-none">{desc}</p>
+              <Title level={3}>{title}</Title>
+              <p className="text-sm font-normal leading-none">{desc}</p>
             </div>
             <div className="w-1/2 mt-5">
               <button className="secondary-btn flex justify-end">shop now</button>
@@ -204,4 +206,4 @@ HeroItem.propTypes = {
   ).isRequired,
 };
           
-
+ 

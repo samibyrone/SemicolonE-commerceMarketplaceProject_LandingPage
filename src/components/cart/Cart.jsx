@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IoHeartOutline, IoCartOutline } from "react-icons/io5";
 import { Badges, Title } from '../CustomComponent';
 import { useDispatch, useSelector } from "react-redux";
+import { NavLink } from 'react-router-dom';
 import { CartActions, selectedTotalPrice, selectedTotalQuantity } from '../../redux/slice/CartSlice';
 
 export const Cart = () => {
@@ -103,11 +104,14 @@ export const Cart = () => {
                             
                                 <div className='total flex items-center justify-between mt-10'>
                                     <Title level={6}>SubTotal: </Title>
-                                    <Title level={6}>${totalPrice.toFixed(2)}</Title>    
+                                    <Title level={6}>₦{totalPrice.toFixed(2)}</Title>    
                                 </div>
                                 <div className='checkout'>
                                     <button className='primary-btn w-full'>View Cart</button>    
                                 </div>
+                                <NavLink to="/cart">
+                                    <button className='primary-btn w-full'>View Cart</button>
+                                </NavLink>
                             </>
                             ) : (
                              <>show product</>
@@ -145,7 +149,7 @@ export const CartProduct = ({id, cover, name, quantity}) => {
                     <div className='details w-1/2'>
                         <BodyOne>{name}</BodyOne>
                         <p className='text-primary-green'>
-                            {quantity} * ${price?.toFixed(2)}
+                            {quantity} * ₦{price?.toFixed(2)}
                         </p>
                     </div>
                     <button className='w-10 h-10 bg-gray-200 flex items-center justify-center rounded-full text-primary'>
@@ -154,5 +158,5 @@ export const CartProduct = ({id, cover, name, quantity}) => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};

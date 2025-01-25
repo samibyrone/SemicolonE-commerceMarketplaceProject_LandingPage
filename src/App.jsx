@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Layout, ProductDetails, Shop } from "./router";
+import { CartPage, Home, Layout, ProductDetails, Shop } from "./router";
 import { Navbar } from './components/Navbar';
 
 
@@ -30,6 +30,15 @@ const App = () => {
             element = { 
               <Layout>
                 <ProductDetails />
+              </Layout>
+            }
+          />
+          <Route 
+            path="/cart"
+            element = { 
+              <Layout>
+                <Navbar />
+                <CartPage />
               </Layout>
             }
           />
