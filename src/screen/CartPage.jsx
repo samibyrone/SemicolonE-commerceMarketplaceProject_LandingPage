@@ -1,17 +1,27 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { CartActions, selectedTotalPrice } from '../redux/slice/CartSlice';
+import { CartActions, clearCart, selectedTotalPrice } from '../redux/slice/CartSlice';
 import bghotel from "../assets/images/Frame (1).png";
 import { BodyOne, Title } from '../components/CustomComponent';
 import { BiMinus, BiPlus } from 'react-icons/bi';
 import { IoCloseOutline } from 'react-icons/io5';
+import StripeCheckout from 'react-stripe-checkout';
 
 export const CartPage = () => {
   
     const cartitems = useSelector((state) => state.cart.itemList);
+
     const totalPrice = useSelector(selectedTotalPrice);
+    
     const dispatch = useDispatch();
   
+    const handleToken = (token) => {
+        console.log("=============================");
+        console.log(token);
+        console.log("=============================");
+        dispatch(clearCart());
+    }
+
     return (
         <>
             <section className='mt-16'>
@@ -81,15 +91,19 @@ export const CartPage = () => {
                                 <p className='w-32'>Total</p>
                                 <p className='text-sm font-normal'>${totalPrice.toFixed(2)}</p>
                             </div>
-                            {/* <StripeCheckout
-                                token={handleToken}
-                                stripeKey=""
-                                amount={totalPrice * 100}
-                                name="Samibyrone Food Store"
-                                description="Payment test using stripe checkout"
+                            
+                            <StripeCheckout
+                                token = {handleToken}
+                                stripeKey = "pk_test_51Lojp7HPatTXixZvuBdyW0Ff28QXnV64xM0HFOw4uTFmfyDZ1FKdVZXeo0TY5v0T5GBKw1VnjsmSFtGWQzmh3700vbOn2kSH"
+                                amount = {total * 100}
+                                name = "Semicolon Ecommerce Website"
+                                email = "Semicolon@gmail.com"
+                                description = "Payment using stripe"
                             >
-                            </StripeCheckout> */}
-                            <button className='primary-btn mt-5'>proceed To Checkout</button>
+                                <button className='primary-btn mt-5'>
+                                    Proceed To Checkout
+                                </button>
+                            </StripeCheckout>
                         </div>
                     </div>
                 </div>

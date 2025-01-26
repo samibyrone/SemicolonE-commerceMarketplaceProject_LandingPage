@@ -54,12 +54,16 @@ const cartSlice = createSlice({
                 0
             );
         },
+        clearCart(state) {
+            state.itemList = [];
+            state.totalQuantity = 0;
+        },
     },
 });
 
 
 export const CartActions = cartSlice.actions;
-export const {} = cartSlice.actions;
+export const { clearCart } = cartSlice.actions;
  
 export const selectedTotalQuantity = createSelector(
     (state) => state.cart.itemList,

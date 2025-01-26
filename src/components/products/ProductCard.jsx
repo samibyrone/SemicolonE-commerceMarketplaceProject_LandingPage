@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
-import { IoCart } from 'react-icons/io5';
+import { IoCart, IoClose } from 'react-icons/io5';
 import { IoMdHeart } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
-import { BodyOne } from '../CustomComponent';           
+import { BodyOne, Title } from '../CustomComponent';           
 import { FaFacebookF, FaRegStar, FaStar, FaStarHalfAlt, FaTwitter } from "react-icons/fa";
-import { IoClose } from 'react-icons/io5';
-import { Title } from '../CustomComponent';
 import { AiFillInstagram } from 'react-icons/ai';
+import { favoriteActions } from '../../redux/slice/FavouriteSlice';
 
 export const RenderRatingStars = (rating) => {
     const totalStars = 5;
@@ -45,6 +44,17 @@ export const ProductCard = ({id, key, title, description, images, price, discoun
         );
     };
 
+    const addToFavorites = () => {
+        dispatch (
+            favoriteActions.addToFavorites({
+                id, 
+                title, 
+                price: discountPrice, 
+                images,
+            })
+        );
+    };
+
     return (
     <>
         <div className="product card">
@@ -79,6 +89,7 @@ export const ProductCard = ({id, key, title, description, images, price, discoun
                         <IoCart size={25}/>
                     </button>
                     <button 
+                        onClick={addToFavorites}
                         className="love-btn product-btn primary-btn"
                     >
                         <IoMdHeart size={25}/>
