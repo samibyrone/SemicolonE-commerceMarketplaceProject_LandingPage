@@ -25,13 +25,7 @@ const favoriteSlice = createSlice({
                 });
             }
         },
-
-        removeFromFavorites(state, action) {
-            const itemIdToRemove = action.payload;
-                state.favoriteItemList = state.favoriteItemList.filter(
-                (item) => item.id !== itemIdToRemove
-            );
-        },
+git add
 
         clearFavorites(state) {
             state.favoriteItemList = [];
